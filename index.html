@@ -24,7 +24,8 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
@@ -32,27 +33,32 @@
     <div class="container my-2">
         <h1>Write your notes!</h1>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Add a note</h5>
-                <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
-                </div>
-                </form>
-                <button class="btn btn-primary" id="addBtn">Add Note</button>
-            </div>
+            <form>
+                <div class="card-body">
+                    <h5 class="card-title">Add title</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="addTitle" aria-describedby="title" placeholder="Enter title">
+                    </div>
+                    <h5 class="card-title">Description</h5>
+                    <div class="form-group">
+                        <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    </div>
+            </form>
+            <button class="btn btn-primary" id="addBtn">Add Note</button>
         </div>
-        <hr>
-        <h1>Your Notes</h1>
-        <hr>
-        <div class="row container-fluid" id="notes">
-            
-        </div>
-        <hr>
-        <h1>Your completed notes</h1>
-        <hr>
-        <div class="row container-fluid" id="completedNotes">
+    </div>
+    <hr>
+    <h1>Your Notes</h1>
+    <hr>
+    <div class="row container-fluid" id="notes">
 
-        </div>
+    </div>
+    <hr>
+    <h1>Your completed notes</h1>
+    <hr>
+    <div class="row container-fluid" id="completeNotes">
+
+    </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
